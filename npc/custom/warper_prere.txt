@@ -336,7 +336,7 @@ S7: Go("turbo_room",99,114);
 // --------------------------------------------------
 //	Duplicates:
 // --------------------------------------------------
-prontera,159,192,4	duplicate(Warper)	Warper#1	507
+prontera,161,176,4	duplicate(Warper)	Warper#1	507
 rachel,135,116,4	duplicate(Warper)	Warper#2	507
 alberta,28,240,4	duplicate(Warper)	Warper#3	507
 aldebaran,145,118,4	duplicate(Warper)	Warper#4	507
