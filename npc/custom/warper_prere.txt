@@ -76,7 +76,7 @@ menu	"Prontera",T1, "Alberta",T2, "Aldebaran",T3, "Amatsu",T4, "Ayothaya",T5,
 	"Niflheim",T25, "Payon",T26, "Rachel",T27, "Splendide",T28, "Thor Camp",T29,
 	"Umbala",T30, "Veins",T31, "Yuno",T32;
 
-T1: Go("prontera",155,183);
+T1: Go("prontera",159,183);
 T2: Go("alberta",28,234);
 T3: Go("aldebaran",140,131);
 T4: Go("amatsu",198,84);
@@ -336,50 +336,50 @@ S7: Go("turbo_room",99,114);
 // --------------------------------------------------
 //	Duplicates:
 // --------------------------------------------------
-prontera,159,192,4	duplicate(Warper)	Warper#1	811
-rachel,135,116,4	duplicate(Warper)	Warper#2	811
-alberta,28,240,4	duplicate(Warper)	Warper#3	811
-aldebaran,145,118,4	duplicate(Warper)	Warper#4	811
-amatsu,203,87,4	duplicate(Warper)	Warper#5	811
-ayothaya,209,169,6	duplicate(Warper)	Warper#6	811
-comodo,194,158,4	duplicate(Warper)	Warper#7	811
-einbech,142,246,4	duplicate(Warper)	Warper#8	811
-einbroch,69,202,4	duplicate(Warper)	Warper#9	811
-hugel,101,151,4	duplicate(Warper)	Warper#10	811
-lighthalzen,151,101,6	duplicate(Warper)	Warper#11	811
-geffen,124,72,4	duplicate(Warper)	Warper#12	811
-izlude,132,120,4	duplicate(Warper)	Warper#13	811
-xmas,150,136,4	duplicate(Warper)	Warper#14	811
-morocc,159,97,4	duplicate(Warper)	Warper#15	811
-payon,182,108,4	duplicate(Warper)	Warper#16	811
-yuno,162,47,4	duplicate(Warper)	Warper#17	811
-moc_fild04,207,331,4	duplicate(Warper)	Warper#18	811
-izlu2dun,104,82,4	duplicate(Warper)	Warper#19	811
-mjolnir_02,85,363,4	duplicate(Warper)	Warper#20	811
-prt_fild05,273,215,4	duplicate(Warper)	Warper#21	811
-glast_01,370,308,4	duplicate(Warper)	Warper#22	811
-yuno_fild03,37,135,4	duplicate(Warper)	Warper#23	811
-gef_fild10,71,339,4	duplicate(Warper)	Warper#24	811
-pay_arche,39,135,4	duplicate(Warper)	Warper#25	811
-moc_ruins,64,166,4	duplicate(Warper)	Warper#26	811
-moc_fild19,106,97,4	duplicate(Warper)	Warper#27	811
-alb2trea,73,101,4	duplicate(Warper)	Warper#28	811
-tur_dun01,148,239,4	duplicate(Warper)	Warper#29	811
-gonryun,162,122,4	duplicate(Warper)	Warper#30	811
-louyang,208,103,6	duplicate(Warper)	Warper#31	811
-umbala,132,130,4	duplicate(Warper)	Warper#32	811
-brasilis,201,222,4	duplicate(Warper)	Warper#33	811
-manuk,262,177,4	duplicate(Warper)	Warper#34	811
-splendide,205,153,4	duplicate(Warper)	Warper#35	811
-mid_camp,216,288,4	duplicate(Warper)	Warper#36	811
-dicastes01,194,194,6	duplicate(Warper)	Warper#37	811
-mora,110,100,4	duplicate(Warper)	Warper#38	811
-moscovia,216,196,6	duplicate(Warper)	Warper#39	811
-nameless_n,259,213,4	duplicate(Warper)	Warper#40	811
-niflheim,205,179,4	duplicate(Warper)	Warper#41	811
-thor_camp,249,76,4	duplicate(Warper)	Warper#42	811
-veins,214,123,4	duplicate(Warper)	Warper#43	811
-dewata,194,178,6	duplicate(Warper)	Warper#44	811
-eclage,107,37,4	duplicate(Warper)	Warper#45	811
-malaya,210,205,4	duplicate(Warper)	Warper#46	811
-malangdo,220,188,6	duplicate(Warper)	Warper#47	811
+prontera,159,192,4	duplicate(Warper)	Warper#1	507
+rachel,135,116,4	duplicate(Warper)	Warper#2	507
+alberta,28,240,4	duplicate(Warper)	Warper#3	507
+aldebaran,145,118,4	duplicate(Warper)	Warper#4	507
+amatsu,203,87,4	duplicate(Warper)	Warper#5	507
+ayothaya,209,169,6	duplicate(Warper)	Warper#6	507
+comodo,194,158,4	duplicate(Warper)	Warper#7	507
+einbech,142,246,4	duplicate(Warper)	Warper#8	507
+einbroch,69,202,4	duplicate(Warper)	Warper#9	507
+hugel,101,151,4	duplicate(Warper)	Warper#10	507
+lighthalzen,151,101,6	duplicate(Warper)	Warper#11	507
+geffen,124,72,4	duplicate(Warper)	Warper#12	507
+izlude,132,120,4	duplicate(Warper)	Warper#13	507
+xmas,150,136,4	duplicate(Warper)	Warper#14	507
+morocc,159,97,4	duplicate(Warper)	Warper#15	507
+payon,182,108,4	duplicate(Warper)	Warper#16	507
+yuno,162,47,4	duplicate(Warper)	Warper#17	507
+moc_fild04,207,331,4	duplicate(Warper)	Warper#18	507
+izlu2dun,104,82,4	duplicate(Warper)	Warper#19	507
+mjolnir_02,85,363,4	duplicate(Warper)	Warper#20	507
+prt_fild05,273,215,4	duplicate(Warper)	Warper#21	507
+glast_01,370,308,4	duplicate(Warper)	Warper#22	507
+yuno_fild03,37,135,4	duplicate(Warper)	Warper#23	507
+gef_fild10,71,339,4	duplicate(Warper)	Warper#24	507
+pay_arche,39,135,4	duplicate(Warper)	Warper#25	507
+moc_ruins,64,166,4	duplicate(Warper)	Warper#26	507
+moc_fild19,106,97,4	duplicate(Warper)	Warper#27	507
+alb2trea,73,101,4	duplicate(Warper)	Warper#28	507
+tur_dun01,148,239,4	duplicate(Warper)	Warper#29	507
+gonryun,162,122,4	duplicate(Warper)	Warper#30	507
+louyang,208,103,6	duplicate(Warper)	Warper#31	507
+umbala,132,130,4	duplicate(Warper)	Warper#32	507
+brasilis,201,222,4	duplicate(Warper)	Warper#33	507
+manuk,262,177,4	duplicate(Warper)	Warper#34	507
+splendide,205,153,4	duplicate(Warper)	Warper#35	507
+mid_camp,216,288,4	duplicate(Warper)	Warper#36	507
+dicastes01,194,194,6	duplicate(Warper)	Warper#37	507
+mora,110,100,4	duplicate(Warper)	Warper#38	507
+moscovia,216,196,6	duplicate(Warper)	Warper#39	507
+nameless_n,259,213,4	duplicate(Warper)	Warper#40	507
+niflheim,205,179,4	duplicate(Warper)	Warper#41	507
+thor_camp,249,76,4	duplicate(Warper)	Warper#42	507
+veins,214,123,4	duplicate(Warper)	Warper#43	507
+dewata,194,178,6	duplicate(Warper)	Warper#44	507
+eclage,107,37,4	duplicate(Warper)	Warper#45	507
+malaya,210,205,4	duplicate(Warper)	Warper#46	507
+malangdo,220,188,6	duplicate(Warper)	Warper#47	507
