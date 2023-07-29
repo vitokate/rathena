@@ -26,8 +26,8 @@
 //	callfunc "qshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-prt_in,38,104,6	script	Coins Shop#1	960,{ callfunc "qshop"; }
-//prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "qshop",1,2; }	// call the shop 1 and 2 defined below
+prt_in,38,104,6	script	Quest Shop#1	960,{ callfunc "qshop"; }
+prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "qshop",1,2; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
 
@@ -69,7 +69,7 @@ OnInit:
 
 	setarray .Shops$[1],
 		"Consumibles",	// Shop Named 1
-		"Costumes",		// Shop Named 2
+		"Weapons",		// Shop Named 2
 //		"Other";		// Shop Named 3
 
 // -----------------------------------------------------------
