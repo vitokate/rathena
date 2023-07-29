@@ -70,7 +70,7 @@ OnInit:
 	setarray .Shops$[1],
 		"Consumibles",	// Shop Named 1
 		"Costumes",		// Shop Named 2
-//		"Other";		// Shop Named 3
+		"Other";		// Shop Named 3
 
 // -----------------------------------------------------------
 //  Quest items -- do NOT use a reward item more than once!
