@@ -26,7 +26,7 @@
 //	callfunc "qshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-prt_in,38,104,4	script	Zeny Shop#1	894,{ callfunc "qshop"; }
+prt_in,38,107,4	script	Zeny Shop#1	894,{ callfunc "qshop"; }
 //prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "qshop",1,2; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
