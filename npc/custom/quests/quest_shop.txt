@@ -154,29 +154,29 @@ OnInit:
 // Shop 3
 
 // Costume Talkactive Parrot
-	Add(3,31134,1,0,0,700000);
+	Add(3,31134,1,700000,0,0,0);
 // Costume Cat Ears Hat
-	Add(3,20499,1,0,0,700000);
+	Add(3,20499,1,700000,0,0,0);
 // Costume Black Rabbit Bonnet
-	Add(3,20257,1,0,0,700000);
+	Add(3,20257,1,700000,0,0,0);
 // Costume Beelzebub Crown
-	Add(3,20302,1,0,0,500000);
+	Add(3,20302,1,700000,0,0,0);
 // Costume Happy Lunatic Hanging Ear
-	Add(3,20298,1,0,0,700000);
+	Add(3,20298,1,700000,0,0,0);
 // Costume Green Hat
-	Add(3,20396,1,0,0,700000);
+	Add(3,20396,1,700000,0,0,0);
 // Costume Fire Muffler
-	Add(3,31178,1,0,0,700000);
+	Add(3,31178,1,700000,0,0,0);
 // Costume Hopping Rabbit
-	Add(3,31249,1,0,0,700000);
+	Add(3,31249,1,700000,0,0,0);
 // Costume Fawn Ears
-	Add(3,31509,1,0,0,500000);
+	Add(3,31509,1,700000,0,0,0);
 // Costume Alice Wig (Peach)
-	Add(3,31407,1,0,0,700000);
+	Add(3,31407,1,700000,0,0,0);
 // Costume Pink Bunny Band
-	Add(3,19586,1,0,0,700000);
-// Costume Roll Twin
-	Add(3,31350,1,0,0,700000);
+	Add(3,19586,1,700000,0,0,0);
+// Costume Roll Twin (Red)
+	Add(3,31350,1,700000,0,0,0);
 
 
 // -----------------------------------------------------------
