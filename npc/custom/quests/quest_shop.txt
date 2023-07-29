@@ -26,8 +26,8 @@
 //	callfunc "qshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-prt_in,38,104,6	script	Coins Shop#1	960,{ callfunc "qshop"; }
-//prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "qshop",1,2; }	// call the shop 1 and 2 defined below
+prt_in,38,104,6	script	Coins Shop#1	960,{ callfunc "qshop",1,2; }
+prt_in,38,107,4	script	Zeny Shop#2	894,{ callfunc "qshop",3; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
 
@@ -150,11 +150,34 @@ OnInit:
 	Add(2,19556,1,0,0,7539,500);
 // C_Halloween_Hat
 	Add(2,19910,1,0,0,7539,500);
+
 // Shop 3
-//	Add(3,531,1,3,0,512,1,713,1);
-//	Add(3,532,1,3,0,513,1,713,1);
-//	Add(3,533,1,3,0,514,1,713,1);
-//	Add(3,534,1,3,0,515,1,713,1);
+
+// Costume Talkactive Parrot
+	Add(3,31134,1,0,0,700000);
+// Costume Cat Ears Hat
+	Add(3,20499,1,0,0,700000);
+// Costume Black Rabbit Bonnet
+	Add(3,20257,1,0,0,700000);
+// Costume Beelzebub Crown
+	Add(3,20302,1,0,0,500000);
+// Costume Happy Lunatic Hanging Ear
+	Add(3,20298,1,0,0,700000);
+// Costume Green Hat
+	Add(3,20396,1,0,0,700000);
+// Costume Fire Muffler
+	Add(3,31178,1,0,0,700000);
+// Costume Hopping Rabbit
+	Add(3,31249,1,0,0,700000);
+// Costume Fawn Ears
+	Add(3,31509,1,0,0,500000);
+// Costume Alice Wig (Peach)
+	Add(3,31407,1,0,0,700000);
+// Costume Pink Bunny Band
+	Add(3,19586,1,0,0,700000);
+// Costume Roll Twin
+	Add(3,31350,1,0,0,700000);
+
 
 // -----------------------------------------------------------
 
