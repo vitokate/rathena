@@ -1,4 +1,4 @@
-prontera,155,185,5	script	Hat Creator	757,{
+prt_in,43,114,4	script	Hat Maker	623,{
 start:
 	mes "[Hat Creator]";
 	mes "Hello, I can create various hats for you.";
