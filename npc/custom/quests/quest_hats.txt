@@ -29,8 +29,13 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 
 	S_Fish_in_Mouth:
 		mes "[Creador de Sombreros]";
-		mes "Fish in Mouth: Aumenta la posibilidad de obtener un item 'Fish' cuando se derrota a un monstruo. También aumenta la cantidad de HP recuperada cuando se consume un 'Fish'..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Fish in Mouth: Aumenta la posibilidad de obtener un item 'Fish' cuando se derrota a un monstruo. Tambien aumenta la cantidad de HP recuperada cuando se consume un 'Fish'..";
+		mes "Requerimientos:";
+		mes "Poring Coin x700";
+		mes "Ancient Lips x350";
+		mes "Mystic Frozen x50";
+		mes "Rough Wind x50";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 700) || (countitem(1054) < 350) || (countitem(995) < 50) || (countitem(996) < 50)){
@@ -48,7 +53,12 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Baby_Dragon_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Baby Dragon Hat: Aumenta la DEX en 2. Proporciona el skill 'Double Attack' en nivel 5..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x700";
+		mes "Red Bijou x250";
+		mes "Yellow Bijou x250";
+		mes "Green Bijou x250";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 700) || (countitem(7447) < 250) || (countitem(7448) < 250) || (countitem(7445) < 250)){
@@ -65,8 +75,14 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 
 	S_Alice_Doll:
 		mes "[Creador de Sombreros]";
-		mes "Alice Doll: Aumenta la STR en 1. Aumenta el daño en un 10% contra los demi-humanos. Tiene una probabilidad de 10% de infligir el estado 'Sleep' al atacante cuando el usuario recibe daño físico..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Alice Doll: Aumenta la STR en 1. Aumenta el dano en un 10% contra los demi-humanos. Tiene una probabilidad de 10% de infligir el estado 'Sleep' al atacante cuando el usuario recibe dano fisico..";
+		mes "Requerimientos:";
+		mes "Poring Coin x2000";
+		mes "Alice's Apron x500";
+		mes "Soft Apron x3";
+		mes "Marionette Doll x1";
+		mes "Hydra Card x1";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 2000) || (countitem(7047) < 500) || (countitem(661) < 3) || (countitem(5141) < 1) || (countitem(4035) < 1)){
@@ -84,8 +100,14 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 
 	S_Glaris_Doll_Hat:
 		mes "[Creador de Sombreros]";
-		mes "Glaris Doll Hat: Reduce el daño recibido de los demi-humanos en un 5%. Aumenta la INT en 2. Aumenta la cantidad de HP recuperada al usar habilidades mágicas en 50..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Glaris Doll Hat: Reduce el dano recibido de los demi-humanos en un 5%. Aumenta la INT en 2. Aumenta la cantidad de HP recuperada al usar habilidades magicas en 50..";
+		mes "Requerimientos:";
+		mes "Poring Coin x2000";
+		mes "Alice's Apron x500";
+		mes "Soft Apron x3";
+		mes "Marionette Doll x1";
+		mes "Thara Frog Card x1";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 2000) || (countitem(7047) < 500) || (countitem(661) < 3) || (countitem(5141) < 1) || (countitem(4058) < 1)){
@@ -103,8 +125,14 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 
 	S_Defolty_Doll_Hat:
 		mes "[Creador de Sombreros]";
-		mes "Defolty Doll Hat: Reduce el daño recibido de los demi-humanos en un 5%. Aumenta la STR en 2. Tiene una probabilidad del 20% de activar el skill 'Angelus' en nivel 10 cuando el usuario recibe daño físico..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Defolty Doll Hat: Reduce el dano recibido de los demi-humanos en un 5%. Aumenta la STR en 2. Tiene una probabilidad del 20% de activar el skill 'Angelus' en nivel 10 cuando el usuario recibe dano fisico..";
+		mes "Requerimientos:";
+		mes "Poring Coin x2000";
+		mes "Alice's Apron x500";
+		mes "Soft Apron x300";
+		mes "Marionette Doll x1";
+		mes "Hydra Card x1";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 2000) || (countitem(7047) < 500) || (countitem(661) < 300) || (countitem(5141) < 1) || (countitem(4035) < 1)){
@@ -123,7 +151,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Carmen_Miranda_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Carmen Miranda Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x2000";
+		mes "Red Prickly Fruit x250";
+		mes "Prickly Fruit x250";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 2000) || (countitem(587) < 250) || (countitem(576) < 250)){
@@ -140,7 +172,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Dress_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Dress Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x2000";
+		mes "Magician Hat x1";
+		mes "Soft Feather x500";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 2000) || (countitem(5045) < 1) || (countitem(7063) < 500)){
@@ -157,7 +193,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Rideword_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Rideword Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x2000";
+		mes "Bookclip in Memory x200";
+		mes "Old Magicbook x2";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 2000) || (countitem(7015) < 200) || (countitem(1006) < 2)){
@@ -174,7 +214,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Festival_Pumpkin_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Festival Pumpkin Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Pumpkin Lantern x1000";
+		mes "Four Leaf Clover x20";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(7225) < 1000) || (countitem(706) < 20)){
@@ -191,7 +235,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Pirate_Dagger:
 		mes "[Creador de Sombreros]";
 		mes "Pirate Dagger: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Well-Dried Bone x20";
+		mes "Wooden Heart x120";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(628) < 20) || (countitem(7189) < 120)){
@@ -208,7 +256,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Purple_Cowboy_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Purple Cowboy Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Corsair x1";
+		mes "Soft Feather x300";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(5019) < 1) || (countitem(7063) < 300)){
@@ -225,7 +277,12 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Santa_Poring_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Santa Poring Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Santa Hat x10";
+		mes "Angel Wing x1";
+		mes "Turquoise x20";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(2236) < 10) || (countitem(2254) < 1) || (countitem(7294) < 20)){
@@ -243,7 +300,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Pisces_Crown:
 		mes "[Creador de Sombreros]";
 		mes "Pisces Crown: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Crown x1";
+		mes "Aquamarine x70";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(2235) < 1) || (countitem(720) < 70)){
@@ -260,7 +321,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Pisces_Diadem:
 		mes "[Creador de Sombreros]";
 		mes "Pisces Diadem: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Emerald x70";
+		mes "Jewel Crown x1";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(721) < 70) || (countitem(5002) < 1)){
@@ -277,7 +342,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Necromancer_s_Hood:
 		mes "[Creador de Sombreros]";
 		mes "Necromancer_s Hood: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Cursed Seal x10";
+		mes "Evil Horn x50";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(7442) < 10) || (countitem(923) < 50)){
@@ -294,7 +363,10 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Koneko_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Koneko Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Drooping Cat x1";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(5058) < 1)){
@@ -310,7 +382,13 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Triple_Poring_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Triple Poring Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Angel Wing x1";
+		mes "Evil Wing x1";
+		mes "Ghost Bandana x1";
+		mes "Turquoise x10";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(2254) < 1) || (countitem(2255) < 1) || (countitem(2274) < 1) || (countitem(7294) < 10)){
@@ -329,7 +407,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_MoonLight_Flower_Hat:
 		mes "[Creador de Sombreros]";
 		mes "MoonLight Flower Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x1200";
+		mes "Nine Tails x500";
+		mes "Topaz x250";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 1200) || (countitem(1022) < 500) || (countitem(728) < 250)){
@@ -346,7 +428,10 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Fish_Head_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Fish Head Hat: No description provided..";
-	if (select("Continuar", "Atrás") == 2) {
+		mes "Requerimientos:";
+		mes "Poring Coin x700";
+		mes "Fresh Fish x800";
+	if (select("Continuar", "Atras") == 2) {
 		callsub S_ShowMenu;
 	}
 	if ((countitem(7539) < 700) || (countitem(579) < 800)){
