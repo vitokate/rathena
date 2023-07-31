@@ -15094,7 +15094,7 @@ static int status_natural_heal(struct block_list* bl, va_list args)
 	{ // Apply sitting regen bonus.
 		sregen = regen->ssregen;
 		if(flag&(RGN_SHP)) { // Sitting HP regen
-			rate = (int)(status->max_hp * 0.03);  // 3% del HP máximo
+			rate = (int)(status->max_hp * (1/30.0));  // 1/30 del HP máximo
 			if (regen->state.overweight)
 				rate /= 2; // Half as fast when overweight.
 			sregen->tick.hp += rate;
@@ -15107,7 +15107,7 @@ static int status_natural_heal(struct block_list* bl, va_list args)
 			}
 		}
 		if(flag&(RGN_SSP)) { // Sitting SP regen
-			rate = (int)(status->max_sp * 0.03);  // 3% del SP máximo
+			rate = (int)(status->max_sp * (1/30.0));  // 1/30 del SP máximo
 			if (regen->state.overweight)
 				rate /= 2; // Half as fast when overweight.
 			sregen->tick.sp += rate;
