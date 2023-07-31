@@ -1,7 +1,7 @@
 prontera,155,185,5	script	Hat Creator	757,{
+start:
 	mes "[Hat Creator]";
 	mes "Hello, I can create various hats for you.";
-	mes "Which hat are you interested in?";
 	next;
 	switch(select("Fish in Mouth:Baby Dragon Hat:Alice Doll:Glaris Doll Hat:Defolty Doll Hat:Carmen Miranda Hat:Dress Hat:Rideword Hat:Festival Pumpkin Hat:Pirate Dagger:Purple Cowboy Hat:Santa Poring Hat:Pisces Crown:Pisces Diadem:Necromancer's Hood:Koneko Hat:Triple Poring Hat:MoonLight Flower Hat:Fish Head Hat")) {
 		case 1: // Fish in Mouth
@@ -9,12 +9,14 @@ prontera,155,185,5	script	Hat Creator	757,{
 			setarray .req_amounts[0],700,350,50,50;
 			set .reward, 5403;
 			set .reward_amount, 1;
+			set .description$, "Insert Fish in Mouth description here";
 			break;
 		case 2: // Baby Dragon Hat
 			setarray .req_items[0],7539,7447,7448,7445;
 			setarray .req_amounts[0],700,250,250,250;
 			set .reward, 5531;
 			set .reward_amount, 1;
+			set .description$, "Insert Baby Dragon Hat description here";
 			break;
 
 case 3: // Alice Doll
@@ -22,6 +24,7 @@ case 3: // Alice Doll
     setarray .req_amounts[0],2000,500,3,1,1;
     set .reward, 5137;
     set .reward_amount, 1;
+    set .description$, "Insert Alice Doll description here";
     break;
 
 case 4: // Glaris Doll Hat
@@ -29,6 +32,7 @@ case 4: // Glaris Doll Hat
     setarray .req_amounts[0],2000,500,3,1,1;
     set .reward, 5341;
     set .reward_amount, 1;
+    set .description$, "Insert Glaris Doll Hat description here";
     break;
 
 case 5: // Defolty Doll Hat
@@ -36,6 +40,7 @@ case 5: // Defolty Doll Hat
     setarray .req_amounts[0],2000,500,300,1,1;
     set .reward, 5340;
     set .reward_amount, 1;
+    set .description$, "Insert Defolty Doll Hat description here";
     break;
 
 case 6: // Carmen Miranda Hat
@@ -43,6 +48,7 @@ case 6: // Carmen Miranda Hat
     setarray .req_amounts[0],2000,250,250;
     set .reward, 5307;
     set .reward_amount, 1;
+    set .description$, "Insert Carmen Miranda Hat description here";
     break;
 
 case 7: // Dress Hat
@@ -50,6 +56,7 @@ case 7: // Dress Hat
     setarray .req_amounts[0],2000,1,500;
     set .reward, 5211;
     set .reward_amount, 1;
+    set .description$, "Insert Dress Hat description here";
     break;
 
 case 8: // Rideword Hat
@@ -57,6 +64,7 @@ case 8: // Rideword Hat
     setarray .req_amounts[0],2000,200,2;
     set .reward, 5208;
     set .reward_amount, 1;
+    set .description$, "Insert Rideword Hat description here";
     break;
 
 case 9: // Festival Pumpkin Hat
@@ -64,6 +72,7 @@ case 9: // Festival Pumpkin Hat
     setarray .req_amounts[0],1200,1000,20;
     set .reward, 5356;
     set .reward_amount, 1;
+    set .description$, "Insert Festival Pumpkin Hat description here";
     break;
 
 case 10: // Pirate Dagger
@@ -71,6 +80,7 @@ case 10: // Pirate Dagger
     setarray .req_amounts[0],1200,20,120;
     set .reward, 5305;
     set .reward_amount, 1;
+    set .description$, "Insert Pirate Dagger description here";
     break;
 
 case 11: // Purple Cowboy Hat
@@ -78,6 +88,7 @@ case 11: // Purple Cowboy Hat
     setarray .req_amounts[0],1200,1,300;
     set .reward, 5409;
     set .reward_amount, 1;
+    set .description$, "Insert Purple Cowboy Hat description here";
     break;
 
 case 12: // Santa Poring Hat
@@ -85,6 +96,7 @@ case 12: // Santa Poring Hat
     setarray .req_amounts[0],1200,10,1,20;
     set .reward, 5381;
     set .reward_amount, 1;
+    set .description$, "Insert Santa Poring Hat description here";
     break;
 
 case 13: // Pisces Crown
@@ -92,6 +104,7 @@ case 13: // Pisces Crown
     setarray .req_amounts[0],1200,1,70;
     set .reward, 5515;
     set .reward_amount, 1;
+    set .description$, "Insert Pisces Crown description here";
     break;
 
 case 14: // Pisces Diadem
@@ -99,6 +112,7 @@ case 14: // Pisces Diadem
     setarray .req_amounts[0],1200,70,1;
     set .reward, 5514;
     set .reward_amount, 1;
+    set .description$, "Insert Pisces Diadem description here";
     break;
 
 case 15: // Necromancer's Hood
@@ -106,6 +120,7 @@ case 15: // Necromancer's Hood
     setarray .req_amounts[0],1200,10,50;
     set .reward, 5502;
     set .reward_amount, 1;
+    set .description$, "Insert Necromancer's Hood description here";
     break;
 
 case 16: // Koneko Hat
@@ -113,6 +128,7 @@ case 16: // Koneko Hat
     setarray .req_amounts[0],1200,1;
     set .reward, 5372;
     set .reward_amount, 1;
+    set .description$, "Insert Koneko Hat description here";
     break;
 
 case 17: // Triple Poring Hat
@@ -120,6 +136,7 @@ case 17: // Triple Poring Hat
     setarray .req_amounts[0],1200,1,1,1,10;
     set .reward, 5255;
     set .reward_amount, 1;
+    set .description$, "Insert Triple Poring Hat description here";
     break;
 
 case 18: // MoonLight Flower Hat
@@ -127,24 +144,32 @@ case 18: // MoonLight Flower Hat
     setarray .req_amounts[0],1200,500,250;
     set .reward, 5214;
     set .reward_amount, 1;
+    set .description$, "Insert MoonLight Flower Hat description here";
     break;
 
 	}
+	mes "[Hat Creator]";
 	mes "You selected the "+getitemname(.reward)+".";
+	mes .description$;
+	next;
+	mes "[Hat Creator]";
 	mes "To create this hat, you need the following items:";
 	for(set .@i,0; .@i<getarraysize(.req_items); set .@i,.@i+1) {
 		mes getitemname(.req_items[.@i])+" ("+countitem(.req_items[.@i])+"/"+.req_amounts[.@i]+")";
 	}
+	next;
 	switch(select("Back:Create")) {
 		case 1: // Back
-			close;
+			goto start;
 		case 2: // Create
 			if(!checkweight(.reward,.reward_amount)) {
+				mes "[Hat Creator]";
 				mes "Your inventory is full. Please make some space and try again.";
 				close;
 			}
 			for(set .@i,0; .@i<getarraysize(.req_items); set .@i,.@i+1) {
 				if(countitem(.req_items[.@i])<.req_amounts[.@i]) {
+					mes "[Hat Creator]";
 					mes "You do not have enough "+getitemname(.req_items[.@i])+".";
 					close;
 				}
@@ -152,6 +177,7 @@ case 18: // MoonLight Flower Hat
 			for(set .@i,0; .@i<getarraysize(.req_items); set .@i,.@i+1)
 				delitem .req_items[.@i],.req_amounts[.@i];
 			getitem .reward,.reward_amount;
+			mes "[Hat Creator]";
 			mes "Congratulations! You have created a "+getitemname(.reward)+".";
 			close;
 	}
