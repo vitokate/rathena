@@ -1,518 +1,550 @@
-prontera,155,181,5	script	Creador de Sombreros	757,{
-	mes "[Creador de Sombreros]";
-	mes "Soy el creador de sombreros de Cyttaria RO.";
-	if (select("Continuar") == 1) {
-		callsub S_ShowMenu;
-	}
-	end;
 
-	S_ShowMenu:
-	switch(select("Fish in Mouth:Baby Dragon Hat:Alice Doll:Glaris Doll Hat:Defolty Doll Hat:Carmen Miranda Hat:Dress Hat:Rideword Hat:Festival Pumpkin Hat:Pirate Dagger:Purple Cowboy Hat:Santa Poring Hat:Pisces Crown:Pisces Diadem:Necromancer_s Hood:Koneko Hat:Triple Poring Hat:MoonLight Flower Hat:Fish Head Hat")){
-		case 1: callsub S_Fish_in_Mouth; break;
-		case 2: callsub S_Baby_Dragon_Hat; break;
-		case 3: callsub S_Alice_Doll; break;
-		case 4: callsub S_Glaris_Doll_Hat; break;
-		case 5: callsub S_Defolty_Doll_Hat; break;
-		case 6: callsub S_Carmen_Miranda_Hat; break;
-		case 7: callsub S_Dress_Hat; break;
-		case 8: callsub S_Rideword_Hat; break;
-		case 9: callsub S_Festival_Pumpkin_Hat; break;
-		case 10: callsub S_Pirate_Dagger; break;
-		case 11: callsub S_Purple_Cowboy_Hat; break;
-		case 12: callsub S_Santa_Poring_Hat; break;
-		case 13: callsub S_Pisces_Crown; break;
-		case 14: callsub S_Pisces_Diadem; break;
-		case 15: callsub S_Necromancer_s_Hood; break;
-		case 16: callsub S_Koneko_Hat; break;
-		case 17: callsub S_Triple_Poring_Hat; break;
-		case 18: callsub S_MoonLight_Flower_Hat; break;
-		case 19: callsub S_Fish_Head_Hat; break;
-	}
-	return;
+    S_Fish_in_Mouth:
+        mes "[Creador de Sombreros]";
+        mes "Fish_in_Mouth: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x700";
+mes "Ancient Lips x350";
+mes "Mystic Frozen x50";
+mes "Rough Wind x50";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 700 && countitem(1054) >= 350 && countitem(995) >= 50 && countitem(996) >= 50) {
+            delitem 7539, 700;
+            delitem 1054, 350;
+            delitem 995, 50;
+            delitem 996, 50;
+            getitem 5403, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Fish_in_Mouth. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Fish_in_Mouth:
-		mes "[Creador de Sombreros]";
-		mes "Fish in Mouth: Aumenta la posibilidad de obtener un item 'Fish' cuando se derrota a un monstruo. Tambien aumenta la cantidad de HP recuperada cuando se consume un 'Fish'..";
-		mes "Requerimientos:";
-		mes "Poring Coin x700";
-		mes "Ancient Lips x350";
-		mes "Mystic Frozen x50";
-		mes "Rough Wind x50";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 700) || (countitem(1054) < 350) || (countitem(995) < 50) || (countitem(996) < 50)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,700;
-		delitem 1054,350;
-		delitem 995,50;
-		delitem 996,50;
-		getitem 5403,1; // Fish in Mouth
-		mes "¡Felicidades! Has obtenido el sombrero Fish in Mouth.";
-		end;
+    S_Baby_Dragon_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Baby_Dragon_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x700";
+mes "Red Bijou x250";
+mes "Yellow Bijou x250";
+mes "Green Bijou x250";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 700 && countitem(7447) >= 250 && countitem(7448) >= 250 && countitem(7445) >= 250) {
+            delitem 7539, 700;
+            delitem 7447, 250;
+            delitem 7448, 250;
+            delitem 7445, 250;
+            getitem 5531, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Baby_Dragon_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Baby_Dragon_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Baby Dragon Hat: Aumenta la DEX en 2. Proporciona el skill 'Double Attack' en nivel 5..";
-		mes "Requerimientos:";
-		mes "Poring Coin x700";
-		mes "Red Bijou x250";
-		mes "Yellow Bijou x250";
-		mes "Green Bijou x250";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 700) || (countitem(7447) < 250) || (countitem(7448) < 250) || (countitem(7445) < 250)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,700;
-		delitem 7447,250;
-		delitem 7448,250;
-		delitem 7445,250;
-		getitem 5531,1; // Baby Dragon Hat
-		mes "¡Felicidades! Has obtenido el sombrero Baby Dragon Hat.";
-		end;
+    S_Alice_Doll:
+        mes "[Creador de Sombreros]";
+        mes "Alice_Doll: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x2000";
+mes "Alice´s Apron x500";
+mes "Soft Apron x3";
+mes "Marionette Doll [1] x1";
+mes "Hydra Card x1";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 2000 && countitem(7047) >= 500 && countitem(661) >= 3 && countitem(5141) >= 1 && countitem(4035) >= 1) {
+            delitem 7539, 2000;
+            delitem 7047, 500;
+            delitem 661, 3;
+            delitem 5141, 1;
+            delitem 4035, 1;
+            getitem 5137, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Alice_Doll. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Alice_Doll:
-		mes "[Creador de Sombreros]";
-		mes "Alice Doll: Aumenta la STR en 1. Aumenta el dano en un 10% contra los demi-humanos. Tiene una probabilidad de 10% de infligir el estado 'Sleep' al atacante cuando el usuario recibe dano fisico..";
-		mes "Requerimientos:";
-		mes "Poring Coin x2000";
-		mes "Alice's Apron x500";
-		mes "Soft Apron x3";
-		mes "Marionette Doll x1";
-		mes "Hydra Card x1";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 2000) || (countitem(7047) < 500) || (countitem(661) < 3) || (countitem(5141) < 1) || (countitem(4035) < 1)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,2000;
-		delitem 7047,500;
-		delitem 661,3;
-		delitem 5141,1;
-		delitem 4035,1;
-		getitem 5137,1; // Alice Doll
-		mes "¡Felicidades! Has obtenido el sombrero Alice Doll.";
-		end;
+    S_Glaris_Doll_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Glaris_Doll_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x2000";
+mes "Alice´s Apron x500";
+mes "Soft Apron x3";
+mes "Marionette Doll [1] x1";
+mes "Thara Frog Card x1";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 2000 && countitem(7047) >= 500 && countitem(661) >= 3 && countitem(5141) >= 1 && countitem(4058) >= 1) {
+            delitem 7539, 2000;
+            delitem 7047, 500;
+            delitem 661, 3;
+            delitem 5141, 1;
+            delitem 4058, 1;
+            getitem 5341, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Glaris_Doll_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Glaris_Doll_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Glaris Doll Hat: Reduce el dano recibido de los demi-humanos en un 5%. Aumenta la INT en 2. Aumenta la cantidad de HP recuperada al usar habilidades magicas en 50..";
-		mes "Requerimientos:";
-		mes "Poring Coin x2000";
-		mes "Alice's Apron x500";
-		mes "Soft Apron x3";
-		mes "Marionette Doll x1";
-		mes "Thara Frog Card x1";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 2000) || (countitem(7047) < 500) || (countitem(661) < 3) || (countitem(5141) < 1) || (countitem(4058) < 1)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,2000;
-		delitem 7047,500;
-		delitem 661,3;
-		delitem 5141,1;
-		delitem 4058,1;
-		getitem 5341,1; // Glaris Doll Hat
-		mes "¡Felicidades! Has obtenido el sombrero Glaris Doll Hat.";
-		end;
+    S_Defolty_Doll_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Defolty_Doll_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x2000";
+mes "Alice´s Apron x500";
+mes "Soft Apron x3";
+mes "Marionette Doll [1] x1";
+mes "Hydra Card x1";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 2000 && countitem(7047) >= 500 && countitem(661) >= 3 && countitem(5141) >= 1 && countitem(4035) >= 1) {
+            delitem 7539, 2000;
+            delitem 7047, 500;
+            delitem 661, 3;
+            delitem 5141, 1;
+            delitem 4035, 1;
+            getitem 5340, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Defolty_Doll_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Defolty_Doll_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Defolty Doll Hat: Reduce el dano recibido de los demi-humanos en un 5%. Aumenta la STR en 2. Tiene una probabilidad del 20% de activar el skill 'Angelus' en nivel 10 cuando el usuario recibe dano fisico..";
-		mes "Requerimientos:";
-		mes "Poring Coin x2000";
-		mes "Alice's Apron x500";
-		mes "Soft Apron x300";
-		mes "Marionette Doll x1";
-		mes "Hydra Card x1";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 2000) || (countitem(7047) < 500) || (countitem(661) < 300) || (countitem(5141) < 1) || (countitem(4035) < 1)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,2000;
-		delitem 7047,500;
-		delitem 661,300;
-		delitem 5141,1;
-		delitem 4035,1;
-		getitem 5340,1; // Defolty Doll Hat
-		mes "¡Felicidades! Has obtenido el sombrero Defolty Doll Hat.";
-		end;
+    S_Carmen_Miranda_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Carmen_Miranda_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x2000";
+mes "Red Prickly Fruit x250";
+mes "Prickly Fruit x250";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 2000 && countitem(587) >= 250 && countitem(576) >= 250) {
+            delitem 7539, 2000;
+            delitem 587, 250;
+            delitem 576, 250;
+            getitem 5307, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Carmen_Miranda_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Carmen_Miranda_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Carmen Miranda Hat: bonus bMdef,3;
-bonus3 bAutoSpellWhenHit,"DC_WINKCHARM",1,50;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x2000";
-		mes "Red Prickly Fruit x250";
-		mes "Prickly Fruit x250";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 2000) || (countitem(587) < 250) || (countitem(576) < 250)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,2000;
-		delitem 587,250;
-		delitem 576,250;
-		getitem 5307,1; // Carmen Miranda Hat
-		mes "¡Felicidades! Has obtenido el sombrero Carmen Miranda Hat.";
-		end;
+    S_Dress_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Dress_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x2000";
+mes "Magician Hat x1";
+mes "Soft Feather x500";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 2000 && countitem(5045) >= 1 && countitem(7063) >= 500) {
+            delitem 7539, 2000;
+            delitem 5045, 1;
+            delitem 7063, 500;
+            getitem 5211, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Dress_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Dress_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Dress Hat: bonus bMdef,7;
-bonus bStr,1;
-bonus bInt,1;
-bonus2 bAddClass,Class_All,2;
-bonus bMAtkRate,2;
-bonus bHealPower,5;
-if (getrefine()>=7) {
-   bonus2 bAddClass,Class_All,1;
-   bonus bMAtkRate,1;
-   bonus bHealPower,1;
-}
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x2000";
-		mes "Magician Hat x1";
-		mes "Soft Feather x500";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 2000) || (countitem(5045) < 1) || (countitem(7063) < 500)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,2000;
-		delitem 5045,1;
-		delitem 7063,500;
-		getitem 5211,1; // Dress Hat
-		mes "¡Felicidades! Has obtenido el sombrero Dress Hat.";
-		end;
+    S_Rideword_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Rideword_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x2000";
+mes "Bookclip In Memory x200";
+mes "Old Magicbook x2";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 2000 && countitem(7015) >= 200 && countitem(1006) >= 2) {
+            delitem 7539, 2000;
+            delitem 7015, 200;
+            delitem 1006, 2;
+            getitem 5208, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Rideword_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Rideword_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Rideword Hat: bonus2 bHPDrainRate,50,8;
-bonus2 bSPDrainRate,10,4;
-bonus2 bHPLossRate,10,5000;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x2000";
-		mes "Bookclip in Memory x200";
-		mes "Old Magicbook x2";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 2000) || (countitem(7015) < 200) || (countitem(1006) < 2)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,2000;
-		delitem 7015,200;
-		delitem 1006,2;
-		getitem 5208,1; // Rideword Hat
-		mes "¡Felicidades! Has obtenido el sombrero Rideword Hat.";
-		end;
+    S_Festival_Pumpkin_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Festival_Pumpkin_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Pumpkin Lantern x1000";
+mes "Four Leaf Clover x20";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(7225) >= 1000 && countitem(706) >= 20) {
+            delitem 7539, 1200;
+            delitem 7225, 1000;
+            delitem 706, 20;
+            getitem 5356, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Festival_Pumpkin_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Festival_Pumpkin_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Festival Pumpkin Hat: bonus2 bSubRace,RC_Demon,5;
-bonus2 bAddRace,RC_Demon,5;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Pumpkin Lantern x1000";
-		mes "Four Leaf Clover x20";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(7225) < 1000) || (countitem(706) < 20)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 7225,1000;
-		delitem 706,20;
-		getitem 5356,1; // Festival Pumpkin Hat
-		mes "¡Felicidades! Has obtenido el sombrero Festival Pumpkin Hat.";
-		end;
+    S_Pirate_Dagger:
+        mes "[Creador de Sombreros]";
+        mes "Pirate_Dagger: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Well-Dried Bone x20";
+mes "Wooden Heart x120";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(628) >= 20 && countitem(7189) >= 120) {
+            delitem 7539, 1200;
+            delitem 628, 20;
+            delitem 7189, 120;
+            getitem 5305, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Pirate_Dagger. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Pirate_Dagger:
-		mes "[Creador de Sombreros]";
-		mes "Pirate Dagger: bonus bBaseAtk,5;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Well-Dried Bone x20";
-		mes "Wooden Heart x120";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(628) < 20) || (countitem(7189) < 120)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 628,20;
-		delitem 7189,120;
-		getitem 5305,1; // Pirate Dagger
-		mes "¡Felicidades! Has obtenido el sombrero Pirate Dagger.";
-		end;
+    S_Purple_Cowboy_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Purple_Cowboy_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Corsair x1";
+mes "Soft Feather x300";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(5019) >= 1 && countitem(7063) >= 300) {
+            delitem 7539, 1200;
+            delitem 5019, 1;
+            delitem 7063, 300;
+            getitem 5409, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Purple_Cowboy_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Purple_Cowboy_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Purple Cowboy Hat: bonus bInt,2;
-bonus bVit,2;
-bonus bMaxSP,50;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Corsair x1";
-		mes "Soft Feather x300";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(5019) < 1) || (countitem(7063) < 300)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 5019,1;
-		delitem 7063,300;
-		getitem 5409,1; // Purple Cowboy Hat
-		mes "¡Felicidades! Has obtenido el sombrero Purple Cowboy Hat.";
-		end;
+    S_Santa_Poring_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Santa_Poring_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Santa Hat x10";
+mes "Angel Wing x1";
+mes "Turquoise x20";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(2236) >= 10 && countitem(2254) >= 1 && countitem(7294) >= 20) {
+            delitem 7539, 1200;
+            delitem 2236, 10;
+            delitem 2254, 1;
+            delitem 7294, 20;
+            getitem 5381, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Santa_Poring_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Santa_Poring_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Santa Poring Hat: bonus bMdef,2;
-bonus2 bAddEle,Ele_Dark,3;
-bonus2 bSubEle,Ele_Dark,3;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Santa Hat x10";
-		mes "Angel Wing x1";
-		mes "Turquoise x20";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(2236) < 10) || (countitem(2254) < 1) || (countitem(7294) < 20)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 2236,10;
-		delitem 2254,1;
-		delitem 7294,20;
-		getitem 5381,1; // Santa Poring Hat
-		mes "¡Felicidades! Has obtenido el sombrero Santa Poring Hat.";
-		end;
+    S_Pisces_Crown:
+        mes "[Creador de Sombreros]";
+        mes "Pisces_Crown: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Crown x1";
+mes "Aquamarine x70";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(2235) >= 1 && countitem(720) >= 70) {
+            delitem 7539, 1200;
+            delitem 2235, 1;
+            delitem 720, 70;
+            getitem 5515, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Pisces_Crown. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Pisces_Crown:
-		mes "[Creador de Sombreros]";
-		mes "Pisces Crown: bonus bInt,2;
-bonus bMdef,5;
-bonus2 bSubEle,Ele_Water, 5;
-if (getrefine()>6) {
-   bonus bDef, 1;
-   bonus bMatkRate,2;
-}
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Crown x1";
-		mes "Aquamarine x70";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(2235) < 1) || (countitem(720) < 70)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 2235,1;
-		delitem 720,70;
-		getitem 5515,1; // Pisces Crown
-		mes "¡Felicidades! Has obtenido el sombrero Pisces Crown.";
-		end;
+    S_Pisces_Diadem:
+        mes "[Creador de Sombreros]";
+        mes "Pisces_Diadem: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Emerald x70";
+mes "Jewel Crown x1";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(721) >= 70 && countitem(5002) >= 1) {
+            delitem 7539, 1200;
+            delitem 721, 70;
+            delitem 5002, 1;
+            getitem 5514, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Pisces_Diadem. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Pisces_Diadem:
-		mes "[Creador de Sombreros]";
-		mes "Pisces Diadem: bonus bInt,2;
-bonus bMdef,5;
-bonus2 bSubEle,Ele_Water, 5;
-if (getrefine()>6) {
-   bonus bDef, 1;
-   bonus bMatkRate,2;
-}
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Emerald x70";
-		mes "Jewel Crown x1";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(721) < 70) || (countitem(5002) < 1)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 721,70;
-		delitem 5002,1;
-		getitem 5514,1; // Pisces Diadem
-		mes "¡Felicidades! Has obtenido el sombrero Pisces Diadem.";
-		end;
+    S_Necromancer's_Hood:
+        mes "[Creador de Sombreros]";
+        mes "Necromancer's_Hood: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Cursed Seal x10";
+mes "Evil Horn x50";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(7442) >= 10 && countitem(923) >= 50) {
+            delitem 7539, 1200;
+            delitem 7442, 10;
+            delitem 923, 50;
+            getitem 5502, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Necromancer's_Hood. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Necromancer_s_Hood:
-		mes "[Creador de Sombreros]";
-		mes "Necromancer_s Hood: bonus5 bAutoSpellWhenHit,"NPC_DARKSTRIKE",5,5,BF_WEAPON|BF_MAGIC,1;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Cursed Seal x10";
-		mes "Evil Horn x50";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(7442) < 10) || (countitem(923) < 50)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 7442,10;
-		delitem 923,50;
-		getitem 5502,1; // Necromancer_s Hood
-		mes "¡Felicidades! Has obtenido el sombrero Necromancer_s Hood.";
-		end;
+    S_Koneko_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Koneko_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Dropping Cat x1";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(5058) >= 1) {
+            delitem 7539, 1200;
+            delitem 5058, 1;
+            getitem 5372, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Koneko_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Koneko_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Koneko Hat: bonus bInt,1;
-bonus bDelayRate,-3;
-bonus bMatkRate,3;
-bonus bMaxSPrate,3;
-bonus bMdef,3;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Drooping Cat x1";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(5058) < 1)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 5058,1;
-		getitem 5372,1; // Koneko Hat
-		mes "¡Felicidades! Has obtenido el sombrero Koneko Hat.";
-		end;
+    S_Triple_Poring_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Triple_Poring_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Angel Wing x1";
+mes "Evil Wing x1";
+mes "Ghost Bandana x1";
+mes "Turquoise x10";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(2254) >= 1 && countitem(2255) >= 1 && countitem(2274) >= 1 && countitem(7294) >= 10) {
+            delitem 7539, 1200;
+            delitem 2254, 1;
+            delitem 2255, 1;
+            delitem 2274, 1;
+            delitem 7294, 10;
+            getitem 5255, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Triple_Poring_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_Triple_Poring_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Triple Poring Hat: bonus bLuk,3;
-bonus3 bAutoSpell,"BS_GREED",1,50;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Angel Wing x1";
-		mes "Evil Wing x1";
-		mes "Ghost Bandana x1";
-		mes "Turquoise x10";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(2254) < 1) || (countitem(2255) < 1) || (countitem(2274) < 1) || (countitem(7294) < 10)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 2254,1;
-		delitem 2255,1;
-		delitem 2274,1;
-		delitem 7294,10;
-		getitem 5255,1; // Triple Poring Hat
-		mes "¡Felicidades! Has obtenido el sombrero Triple Poring Hat.";
-		end;
+    S_MoonLight_Flower_Hat:
+        mes "[Creador de Sombreros]";
+        mes "MoonLight_Flower_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x1200";
+mes "Nine Tails x500";
+mes "Topaz x250";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 1200 && countitem(1022) >= 500 && countitem(728) >= 250) {
+            delitem 7539, 1200;
+            delitem 1022, 500;
+            delitem 728, 250;
+            getitem 5214, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu MoonLight_Flower_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
 
-	S_MoonLight_Flower_Hat:
-		mes "[Creador de Sombreros]";
-		mes "MoonLight Flower Hat: bonus bDex,2;
-bonus3 bAutoSpell,"AL_INCAGI",1,50;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x1200";
-		mes "Nine Tails x500";
-		mes "Topaz x250";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 1200) || (countitem(1022) < 500) || (countitem(728) < 250)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,1200;
-		delitem 1022,500;
-		delitem 728,250;
-		getitem 5214,1; // MoonLight Flower Hat
-		mes "¡Felicidades! Has obtenido el sombrero MoonLight Flower Hat.";
-		end;
-
-	S_Fish_Head_Hat:
-		mes "[Creador de Sombreros]";
-		mes "Fish Head Hat: bonus3 bAutoSpell,"SA_FROSTWEAPON",1,5;
-.";
-		mes "Requerimientos:";
-		mes "Poring Coin x700";
-		mes "Fresh Fish x800";
-	if (select("Continuar", "Atras") == 2) {
-		callsub S_ShowMenu;
-	}
-	if ((countitem(7539) < 700) || (countitem(579) < 800)){
-			mes "No tienes los objetos requeridos.";
-			mes "Estare aqui esperandote con los items que te pedi.";
-			end;
-		}
-		delitem 7539,700;
-		delitem 579,800;
-		getitem 5380,1; // Fish Head Hat
-		mes "¡Felicidades! Has obtenido el sombrero Fish Head Hat.";
-		end;
-}
+    S_Fish_Head_Hat:
+        mes "[Creador de Sombreros]";
+        mes "Fish_Head_Hat: Pendiente de agregar descripcion";
+        mes "Requerimientos:";
+        mes "Poring Coin x700";
+mes "Fresh Fish x800";
+        mes "¿Quieres crear este sombrero?";
+        menu "Si, quiero.", L_Create, "No, gracias.", L_Cancel;
+    L_Cancel:
+        mes "[Creador de Sombreros]";
+        mes "No hay problema. Si cambias de opinion, sabes donde encontrarme.";
+        close;
+    L_Create:
+        if (countitem(7539) >= 700 && countitem(579) >= 800) {
+            delitem 7539, 700;
+            delitem 579, 800;
+            getitem 5380, 1;
+            mes "[Creador de Sombreros]";
+            mes "¡Hecho! Aqui tienes tu Fish_Head_Hat. ¡Disfrútalo!";
+            close;
+        }
+        mes "[Creador de Sombreros]";
+        mes "Parece que no tienes todos los materiales necesarios.";
+        close;
+    
