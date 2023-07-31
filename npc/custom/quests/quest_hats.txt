@@ -3,31 +3,31 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	end;
 
 	S_ShowMenu:
-	switch(select("Fish in Mouth:Baby Dragon Hat:Alice Doll:Glaris Doll Hat:Defolty Doll Hat:Carmen Miranda Hat:Dress Hat:Rideword Hat:Festival Pumpkin Hat:Pirate Dagger:Purple Cowboy Hat:Santa Poring Hat:Pisces Crown:Pisces Diadem:Necromancer's Hood:Koneko Hat:Triple Poring Hat:MoonLight Flower Hat:Fish Head Hat:Cancelar")){
-		case 1: callsub S_FishinMouth; break;
-		case 2: callsub S_BabyDragonHat; break;
-		case 3: callsub S_AliceDoll; break;
-		case 4: callsub S_GlarisDollHat; break;
-		case 5: callsub S_DefoltyDollHat; break;
-		case 6: callsub S_CarmenMirandaHat; break;
-		case 7: callsub S_DressHat; break;
-		case 8: callsub S_RidewordHat; break;
-		case 9: callsub S_FestivalPumpkinHat; break;
-		case 10: callsub S_PirateDagger; break;
-		case 11: callsub S_PurpleCowboyHat; break;
-		case 12: callsub S_SantaPoringHat; break;
-		case 13: callsub S_PiscesCrown; break;
-		case 14: callsub S_PiscesDiadem; break;
-		case 15: callsub S_Necromancer'sHood; break;
-		case 16: callsub S_KonekoHat; break;
-		case 17: callsub S_TriplePoringHat; break;
-		case 18: callsub S_MoonLightFlowerHat; break;
-		case 19: callsub S_FishHeadHat; break;
+	switch(select("Fish in Mouth:Baby Dragon Hat:Alice Doll:Glaris Doll Hat:Defolty Doll Hat:Carmen Miranda Hat:Dress Hat:Rideword Hat:Festival Pumpkin Hat:Pirate Dagger:Purple Cowboy Hat:Santa Poring Hat:Pisces Crown:Pisces Diadem:Necromancer_s Hood:Koneko Hat:Triple Poring Hat:MoonLight Flower Hat:Fish Head Hat:Cancelar")){
+		case 1: callsub S_Fish_in_Mouth; break;
+		case 2: callsub S_Baby_Dragon_Hat; break;
+		case 3: callsub S_Alice_Doll; break;
+		case 4: callsub S_Glaris_Doll_Hat; break;
+		case 5: callsub S_Defolty_Doll_Hat; break;
+		case 6: callsub S_Carmen_Miranda_Hat; break;
+		case 7: callsub S_Dress_Hat; break;
+		case 8: callsub S_Rideword_Hat; break;
+		case 9: callsub S_Festival_Pumpkin_Hat; break;
+		case 10: callsub S_Pirate_Dagger; break;
+		case 11: callsub S_Purple_Cowboy_Hat; break;
+		case 12: callsub S_Santa_Poring_Hat; break;
+		case 13: callsub S_Pisces_Crown; break;
+		case 14: callsub S_Pisces_Diadem; break;
+		case 15: callsub S_Necromancer_s_Hood; break;
+		case 16: callsub S_Koneko_Hat; break;
+		case 17: callsub S_Triple_Poring_Hat; break;
+		case 18: callsub S_MoonLight_Flower_Hat; break;
+		case 19: callsub S_Fish_Head_Hat; break;
 		case 20: close; break;
 	}
 	return;
 
-	S_FishinMouth:
+	S_Fish_in_Mouth:
 		mes "[Creador de Sombreros]";
 		mes "Fish in Mouth: Aumenta la posibilidad de obtener un item 'Fish' cuando se derrota a un monstruo. También aumenta la cantidad de HP recuperada cuando se consume un 'Fish'..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -45,7 +45,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Fish in Mouth.";
 		end;
 
-	S_BabyDragonHat:
+	S_Baby_Dragon_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Baby Dragon Hat: Aumenta la DEX en 2. Proporciona el skill 'Double Attack' en nivel 5..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -63,7 +63,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Baby Dragon Hat.";
 		end;
 
-	S_AliceDoll:
+	S_Alice_Doll:
 		mes "[Creador de Sombreros]";
 		mes "Alice Doll: Aumenta la STR en 1. Aumenta el daño en un 10% contra los demi-humanos. Tiene una probabilidad de 10% de infligir el estado 'Sleep' al atacante cuando el usuario recibe daño físico..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -82,7 +82,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Alice Doll.";
 		end;
 
-	S_GlarisDollHat:
+	S_Glaris_Doll_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Glaris Doll Hat: Reduce el daño recibido de los demi-humanos en un 5%. Aumenta la INT en 2. Aumenta la cantidad de HP recuperada al usar habilidades mágicas en 50..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -101,7 +101,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Glaris Doll Hat.";
 		end;
 
-	S_DefoltyDollHat:
+	S_Defolty_Doll_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Defolty Doll Hat: Reduce el daño recibido de los demi-humanos en un 5%. Aumenta la STR en 2. Tiene una probabilidad del 20% de activar el skill 'Angelus' en nivel 10 cuando el usuario recibe daño físico..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -120,7 +120,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Defolty Doll Hat.";
 		end;
 
-	S_CarmenMirandaHat:
+	S_Carmen_Miranda_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Carmen Miranda Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -137,7 +137,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Carmen Miranda Hat.";
 		end;
 
-	S_DressHat:
+	S_Dress_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Dress Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -154,7 +154,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Dress Hat.";
 		end;
 
-	S_RidewordHat:
+	S_Rideword_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Rideword Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -171,7 +171,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Rideword Hat.";
 		end;
 
-	S_FestivalPumpkinHat:
+	S_Festival_Pumpkin_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Festival Pumpkin Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -188,7 +188,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Festival Pumpkin Hat.";
 		end;
 
-	S_PirateDagger:
+	S_Pirate_Dagger:
 		mes "[Creador de Sombreros]";
 		mes "Pirate Dagger: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -205,7 +205,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Pirate Dagger.";
 		end;
 
-	S_PurpleCowboyHat:
+	S_Purple_Cowboy_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Purple Cowboy Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -222,7 +222,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Purple Cowboy Hat.";
 		end;
 
-	S_SantaPoringHat:
+	S_Santa_Poring_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Santa Poring Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -240,7 +240,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Santa Poring Hat.";
 		end;
 
-	S_PiscesCrown:
+	S_Pisces_Crown:
 		mes "[Creador de Sombreros]";
 		mes "Pisces Crown: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -257,7 +257,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Pisces Crown.";
 		end;
 
-	S_PiscesDiadem:
+	S_Pisces_Diadem:
 		mes "[Creador de Sombreros]";
 		mes "Pisces Diadem: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -274,9 +274,9 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Pisces Diadem.";
 		end;
 
-	S_Necromancer'sHood:
+	S_Necromancer_s_Hood:
 		mes "[Creador de Sombreros]";
-		mes "Necromancer's Hood: No description provided..";
+		mes "Necromancer_s Hood: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
 		callsub S_ShowMenu;
 	}
@@ -287,11 +287,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		delitem 7539,1200;
 		delitem 7442,10;
 		delitem 923,50;
-		getitem 5502,1; // Necromancer's Hood
-		mes "¡Felicidades! Has obtenido el sombrero Necromancer's Hood.";
+		getitem 5502,1; // Necromancer_s Hood
+		mes "¡Felicidades! Has obtenido el sombrero Necromancer_s Hood.";
 		end;
 
-	S_KonekoHat:
+	S_Koneko_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Koneko Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -307,7 +307,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Koneko Hat.";
 		end;
 
-	S_TriplePoringHat:
+	S_Triple_Poring_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Triple Poring Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -326,7 +326,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		mes "¡Felicidades! Has obtenido el sombrero Triple Poring Hat.";
 		end;
 
-	S_MoonLightFlowerHat:
+	S_MoonLight_Flower_Hat:
 		mes "[Creador de Sombreros]";
 		mes "MoonLight Flower Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
@@ -339,11 +339,11 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 		delitem 7539,1200;
 		delitem 1022,500;
 		delitem 728,250;
-		getitem 5214,1;
+		getitem 5214,1; // MoonLight Flower Hat
 		mes "¡Felicidades! Has obtenido el sombrero MoonLight Flower Hat.";
 		end;
 
-	S_FishHeadHat:
+	S_Fish_Head_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Fish Head Hat: No description provided..";
 	if (select("Continuar", "Atrás") == 2) {
