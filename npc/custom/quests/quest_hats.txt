@@ -159,7 +159,7 @@ prontera,155,181,5	script	Creador de Sombreros	757,{
 	S_Carmen_Miranda_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Carmen Miranda Hat:.";
-bonus3 bAutoSpellWhenHit,"DC_WINKCHARM",1,50;
+	mes "bonus3 bAutoSpellWhenHit,"DC_WINKCHARM",1,50;
 .";
 		mes "Requerimientos:.";
 		mes "Poring Coin x2000";
@@ -446,7 +446,7 @@ bonus bMdef,3;
 	S_Triple_Poring_Hat:
 		mes "[Creador de Sombreros]";
 		mes "Triple Poring Hat:.";
-bonus3 bAutoSpell,"BS_GREED",1,50;
+	mes "bonus3 bAutoSpell,"BS_GREED",1,50;
 .";
 		mes "Requerimientos:.";
 		mes "Poring Coin x1200";
@@ -474,7 +474,7 @@ bonus3 bAutoSpell,"BS_GREED",1,50;
 	S_MoonLight_Flower_Hat:
 		mes "[Creador de Sombreros]";
 		mes "MoonLight Flower Hat:.";
-bonus3 bAutoSpell,"AL_INCAGI",1,50;
+	mes "bonus3 bAutoSpell,"AL_INCAGI",1,50;
 .";
 		mes "Requerimientos:.";
 		mes "Poring Coin x1200";
