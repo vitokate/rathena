@@ -72,14 +72,14 @@ OnInit:
 	setarray .Shops$[1],
 		"Consumibles",	// Shop Named 1
 		"Costumes",		// Shop Named 2
-		"Quest Costumes";		// Shop Named 3
-		"50 Cash Points";    // 4
-		"70 Cash Points";    // 5
-		"100 Cash Points";   // 6
-		"120 Cash Points";   // 7
-		"150 Cash Points";   // 8
-		"200 Cash Points";   // 9
-		"300 Cash Points";   // 10
+		"Quest Costumes",		// Shop Named 3
+		"50 Cash Points",    // 4
+		"70 Cash Points",    // 5
+		"100 Cash Points",   // 6
+		"120 Cash Points",   // 7
+		"150 Cash Points",   // 8
+		"200 Cash Points",   // 9
+		"300 Cash Points",   // 10
 		"500 Cash Points";   // 11
 
 // -----------------------------------------------------------
