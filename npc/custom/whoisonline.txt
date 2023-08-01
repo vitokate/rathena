@@ -1,0 +1,17 @@
+prontera,150,191,4	script	PlayerOnline	512,{
+	query_sql "SELECT `name` , `class` FROM `char` WHERE `online` = '1'", .@name$, .@class;
+	mes "-----------------------------------";
+	mes "Online Users: " + getusers(1);
+	mes "-----------------------------------";
+	for( set .@a,0; .@a < getarraysize(.@name$); set .@a,.@a + 1)
+		mes .@name$[.@a]+ " | Job: " +jobname(.@class[.@a]);
+	mes "-----------------------------------";
+	close;
+	
+	OnInit:
+	OnPCLoginEvent:
+	OnPCLogoutEvent:
+		delwaitingroom;
+		waitingroom "Online Users: " + getusers(1), 0;
+		end;
+}
