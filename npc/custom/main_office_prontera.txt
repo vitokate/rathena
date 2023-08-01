@@ -1,4 +1,4 @@
-prontera,x,y,5	script	Prontera Main Office	444,{
+prontera,141,180,6	script	Prontera Main Office	444,{
 	OnInit:
 		attachrid(getnpcid(0, "Prontera Main Office"));
 		npctalk("Prontera Main Office", "", bc_self);
