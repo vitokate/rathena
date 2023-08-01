@@ -266,7 +266,7 @@ OnInit:
 	Add(9,20154,1,0,200); // Falling Leaves
 //Quest shop 10 (300 puntos)
 	Add(10,18744,1,0,300); // Twilight
-Quest shop 11 (500 puntos)
+//Quest shop 11 (500 puntos)
 	Add(11,20761,1,0,500); // Happiness Wings
 	Add(11,20765,1,0,500); // Archangel Wing
 	Add(11,20764,1,0,500); // Fallen Angel Wing
