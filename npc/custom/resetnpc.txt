@@ -11,7 +11,7 @@
 //=	Changed set -> setarray, Improved text with F_InsertPlural
 //= 1.5 Added sc_end_class to reset related status changes [sader1992]
 //============================================================
-prontera,35,114,4	script	Reset Girl	124,{
+prt_in,35,114,4	script	Reset Girl	124,{
 	//	 		Skills,	Stats,	Both,	Limit
 	setarray .@Reset,	350000,	350000,	600000,	0;
 	mes "[Reset Girl]";
