@@ -28,6 +28,8 @@
 //============================================================
 prt_in,38,104,6	script	Coins Shop#1	960,{ callfunc "qshop",1,2; }
 prt_in,39,115,4	script	Zeny Shop#2	894,{ callfunc "qshop",3; }	// call the shop 1 and 2 defined below
+prt_in,43,97,8	script	Zeny Shop#2	894,{ callfunc "qshop",4,5,6,7,8,9,10,11; }	// call the shop 1 and 2 defined below
+
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
 
@@ -70,7 +72,15 @@ OnInit:
 	setarray .Shops$[1],
 		"Consumibles",	// Shop Named 1
 		"Costumes",		// Shop Named 2
-		"Other";		// Shop Named 3
+		"Quest Costumes";		// Shop Named 3
+		"50 Cash Points";    // 4
+		"70 Cash Points";    // 5
+		"100 Cash Points";   // 6
+		"120 Cash Points";   // 7
+		"150 Cash Points";   // 8
+		"200 Cash Points";   // 9
+		"300 Cash Points";   // 10
+		"500 Cash Points";   // 11
 
 // -----------------------------------------------------------
 //  Quest items -- do NOT use a reward item more than once!
@@ -191,6 +201,77 @@ OnInit:
 	Add(3,5214,1,0,0,7539,1200,1022,500,728,250);
 // Fish Head Hat
 	Add(3,5380,1,0,0,7539,700,579,800);
+
+/Quest shop 4 (50 points)
+	Add(4,31562,1,0,50); // Zealotus Doll
+	Add(4,20449,1,0,50); // Black and White Temptation
+	Add(4,19934,1,0,50); // Alive Ten Gallon Hat Of Flame
+	Add(4,20313,1,0,50); // Costume CD in Mouth
+	Add(4,19700,1,0,50); // Champ Crown
+	Add(4,19530,1,0,50); // Wild Rose Hat
+	Add(4,20177,1,0,50); // Drooping Dorasuke
+	Add(4,18740,1,0,50); // White Phoenix Hair
+	Add(4,19917,1,0,50); // Gloomy Pumpkin Hat
+	Add(4,19598,1,0,50); // Wondering Wolf Helm
+	Add(4,20183,1,0,50); // Floating Ghost
+	Add(4,19544,1,0,50); // Drooping Cat Crew
+	Add(4,19537,1,0,50); // Gryphon Hat
+	Add(4,19667,1,0,50); // Helm of Dragoon
+	Add(4,20227,1,0,50); // Husky Hat
+	Add(4,19599,1,0,50); // Imp Hat
+	Add(4,19712,1,0,50); // Little Angel Doll
+	Add(4,19543,1,0,50); // Oliver Wolf Hood
+	Add(4,19707,1,0,50); // Pecopeco Cap Costume
+	Add(4,20273,1,0,50); // Soft Sheep Hat
+	Add(4,19884,1,0,50); // Vanargand Helm
+	Add(4,19818,1,0,50); // Droop Morocc Minion
+	Add(4,19883,1,0,50); // Piamette Hood
+	Add(4,19816,1,0,50); // Pecopeco Cap Costume
+	Add(4,20194,1,0,50); // Lion Mask
+	Add(4,20268,1,0,50); // Sleep Eclipse Family
+	Add(4,20006,1,0,50); // Dark Knight Mask
+	Add(4,20045,1,0,50); // Samambaia
+	Add(4,20197,1,0,50); // Amistr Beret
+
+// Quest Shop 5 (70 puntos)
+	Add(5,19777,1,0,70); // Twinkling Star
+	Add(5,20249,1,0,70); // Red Strong Hair
+	Add(5,31624,1,0,70); // Moew Lover
+	Add(5,20458,1,0,70); // Wild Poring Rider
+	Add(5,31179,1,0,70); // Wolf Masquerade
+// Quest shop 6 (100 puntos)
+	Add(6,31062,1,0,100); // Costume: Eleanor Wig
+	Add(6,31405,1,0,100); // Costume: Golden Eleanor Wig
+	Add(6,20405,1,0,100); // Costume Eremes' Scarf
+	Add(6,31057,1,0,100); // Costume Eremes Scarf (Black)
+	Add(6,20481,1,0,100); // Burning Mask of Champions
+	Add(6,19294,1,0,100); // Cyber Cat Ear Headphones (Red)
+	Add(6,20329,1,0,100); // Very Cute Doll Hat
+	Add(6,20036,1,0,100); // Crown of the Sword Master
+	Add(6,19823,1,0,100); // Kitsune Mask Hood
+	Add(6,19743,1,0,100); // Anubis Helm
+// Quest shop 7 (120 puntos)
+	Add(7,31186,1,0,120); // Black Cat
+	Add(7,31452,1,0,120); // White Cat
+	Add(7,31299,1,0,120); // White Rabbit
+// Quest Shop 8 (150 puntos)
+	Add(8,20247,1,0,150); // Costume Black Hand of Destiny
+	Add(8,31437,1,0,150); // Costume Baby Penguin
+	Add(8,20349,1,0,150); // Costume Flying Galapago
+	Add(8,20404,1,0,150); // Blessing Of Angels
+// Quest shop 9 (200 puntos)
+	Add(9,20285,1,0,200); // Costume Fluttering Cherry Blossom
+	Add(9,31498,1,0,200); // Costume: Elephangel
+	Add(9,31395,1,0,200); // Book of Magic
+	Add(9,20154,1,0,200); // Falling Leaves
+//Quest shop 10 (300 puntos)
+	Add(10,18744,1,0,300); // Twilight
+Quest shop 11 (500 puntos)
+	Add(11,20761,1,0,500); // Happiness Wings
+	Add(11,20765,1,0,500); // Archangel Wing
+	Add(11,20764,1,0,500); // Fallen Angel Wing
+	Add(11,20727,1,0,500); // Brilliant Golden Wings
+
 
 // -----------------------------------------------------------
 
@@ -342,3 +423,9 @@ function	script	qshop	{
 -	shop	qshop3	-1,909:-1
 -	shop	qshop4	-1,909:-1
 -	shop	qshop5	-1,909:-1
+-	shop	qshop6	-1,909:-1
+-	shop	qshop7	-1,909:-1
+-	shop	qshop8	-1,909:-1
+-	shop	qshop9	-1,909:-1
+-	shop	qshop10	-1,909:-1
+-	shop	qshop11	-1,909:-1
