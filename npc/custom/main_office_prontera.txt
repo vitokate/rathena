@@ -1,0 +1,4 @@
+prontera,139,181,6	script	Prontera Main Office	444,{
+    OnInit:
+        dispbottom "Prontera Main Office",0;
+}
