@@ -202,7 +202,7 @@ OnInit:
 // Fish Head Hat
 	Add(3,5380,1,0,0,7539,700,579,800);
 
-/Quest shop 4 (50 points)
+//Quest shop 4 (50 points)
 	Add(4,31562,1,0,50); // Zealotus Doll
 	Add(4,20449,1,0,50); // Black and White Temptation
 	Add(4,19934,1,0,50); // Alive Ten Gallon Hat Of Flame
