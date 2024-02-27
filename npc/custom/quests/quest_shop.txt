@@ -26,9 +26,10 @@
 //	callfunc "qshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-prt_in,38,104,6	script	Poring Coins Shop#1	960,{ callfunc "qshop",1,2; }
-prt_in,39,115,4	script	Quest Shop#2	667,{ callfunc "qshop",3; }	// call the shop 1 and 2 defined below
-prt_in,43,97,8	script	Cash Shop#3	667,{ callfunc "qshop",4,5,6,7,8,9,10,11; }	// call the shop 1 and 2 defined below
+prt_in,38,107,4	script	Winter Costumes#1	894,{ callfunc "qshop",1; }
+prt_in,38,104,6	script	Poring Coins Shop#2	960,{ callfunc "qshop",2,3; }
+prt_in,39,115,4	script	Quest Shop#3	667,{ callfunc "qshop",4; }	// call the shop 1 and 2 defined below
+prt_in,43,97,8	script	Cash Shop#4	667,{ callfunc "qshop",5,6,7,8,9,10,11,12; }	// call the shop 1 and 2 defined below
 
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
@@ -70,17 +71,18 @@ OnInit:
 // -----------------------------------------------------------
 
 	setarray .Shops$[1],
-		"Consumibles",	// Shop Named 1
-		"Costumes",		// Shop Named 2
-		"Quest Costumes",		// Shop Named 3
-		"50 Cash Points",    // 4
-		"70 Cash Points",    // 5
-		"100 Cash Points",   // 6
-		"120 Cash Points",   // 7
-		"150 Cash Points",   // 8
-		"200 Cash Points",   // 9
-		"300 Cash Points",   // 10
-		"500 Cash Points";   // 11
+		"Winter Costumes",	// Shop Named 1
+		"Consumibles",	// Shop Named 2
+		"Costumes",		// Shop Named 3
+		"Quest Costumes",		// Shop Named 4
+		"50 Cash Points",    // 5
+		"70 Cash Points",    // 6
+		"100 Cash Points",   // 7
+		"120 Cash Points",   // 8
+		"150 Cash Points",   // 9
+		"200 Cash Points",   // 10
+		"300 Cash Points",   // 11
+		"500 Cash Points";   // 12
 
 // -----------------------------------------------------------
 //  Quest items -- do NOT use a reward item more than once!
@@ -89,187 +91,161 @@ OnInit:
 //	    <required item ID>,<required item amount>{,...});
 // -----------------------------------------------------------
 
+
 // Shop 1
-	Add(1,12216,1,0,0,7539,2); // LV10 Agi Scroll
-	Add(1,12466,1,0,0,7539,2); // LV10 Blessing Scroll
-	Add(1,12211,1,0,0,7539,20); // Kafra Card
-	Add(1,12909,1,0,0,7539,200); // Kafra Card 10pc Box
-	Add(1,13697,1,0,0,7539,20); // Blessing Scroll Box (10)
-	Add(1,13698,1,0,0,7539,20); // Increase Agility Scroll Box (10)
-	Add(1,14233,1,0,0,7539,50); // Dead Branch box (10)
-	Add(1,12103,1,0,0,7539,300); // Bloody Branch
-	Add(1,7776,1,0,0,7539,70); // Gym Pass
-	Add(1,13710,1,0,0,7539,700); // Gym Pass Box
-	Add(1,12887,1,0,0,7539,700); // Infinite Fly Wing
-	Add(1,13995,1,0,0,7539,5); // Speed Potion Box (10)
-	Add(1,12209,1,0,0,7539,3); // Life Insurance
-	Add(1,7621,1,0,0,7539,30); // Token of Siegfried
-	Add(1,14535,1,0,0,7539,15); // Medium Life Potion
-	Add(1,13714,1,0,0,7539,150); // Medium Life Potion 10 Box
-	Add(1,14537,1,0,0,7539,15); // Regeneration Potion
-	Add(1,14113,1,0,0,7539,150); // Regeneration Potion Box (10)
-	Add(1,14601,1,0,0,7539,50); // Tyr's Blessing
-	Add(1,12214,1,0,0,7539,6); // Convex Mirror
+	Add(1,20499,1,0,0,23550,50); // Item ID 20499, requiere 50 del item 23550
+	Add(1,20257,1,0,0,23550,50); // Item ID 20257, requiere 50 del item 23550
+	Add(1,20302,1,0,0,23550,50); // Item ID 20302, requiere 50 del item 23550
+	Add(1,20298,1,0,0,23550,50); // Item ID 20298, requiere 50 del item 23550
+	Add(1,20396,1,0,0,23550,50); // Item ID 20396, requiere 50 del item 23550
+	Add(1,31178,1,0,0,23550,50); // Item ID 31178, requiere 50 del item 23550
+	Add(1,31249,1,0,0,23550,50); // Item ID 31249, requiere 50 del item 23550
+	Add(1,31509,1,0,0,23550,50); // Item ID 31509, requiere 50 del item 23550
+	Add(1,31407,1,0,0,23550,50); // Item ID 31407, requiere 50 del item 23550
+	Add(1,19586,1,0,0,23550,50); // Item ID 19586, requiere 50 del item 23550
+
+
+
+
 
 // Shop 2
-// C_Amistr_Cap
-	Add(2,19827,1,0,0,7539,500);
-// C_Baseball_Cap
-	Add(2,19834,1,0,0,7539,500);
-// C_Blazing_Sun
-	Add(2,19808,1,0,0,7539,500);
-// C_Red_Bonnet
-	Add(2,19701,1,0,0,7539,500);
-// C_Filir_Hat
-	Add(2,19831,1,0,0,7539,500);
-// Costume Drooping_Kiehl
-	Add(2,19600,1,0,0,7539,500);
-// C_Bijofnil_Wings
-	Add(2,19623,1,0,0,7539,500);
-// C_Blazing_Soul
-	Add(2,19969,1,0,0,7539,500);
-// C_Chick_Hat
-	Add(2,19608,1,0,0,7539,500);
-// C_Coppola
-	Add(2,19660,1,0,0,7539,500);
-// C_Diabolic_Headphone
-	Add(2,20175,1,0,0,7539,500);
-// C_Drooping_Argiope
-	Add(2,19959,1,0,0,7539,500);
-// C_Drooping_Bunny
-	Add(2,19878,1,0,0,7539,500);
-// Costume School_Criatura_Hat
-	Add(2,19860,1,0,0,7539,500);
-// C_Dying_Swan
-	Add(2,19971,1,0,0,7539,500);
-// Costume Magnolia_Hat
-	Add(2,20160,1,0,0,7539,500);
-// C_Clover_Silkhat
-	Add(2,20085,1,0,0,7539,500);
-// Costume Hermos_Cap
-	Add(2,20042,1,0,0,7539,500);
-// C_Puppy_Hat
-	Add(2,19842,1,0,0,7539,500);
-// Costume Asara_Fairy_Hat
-	Add(2,19837,1,0,0,7539,500);
-// Costume Quve_Mask
-	Add(2,19919,1,0,0,7539,500);
-// Costume Tha_Despero Mask
-	Add(2,19747,1,0,0,7539,500);
-// C_Kabuki_Mask
-	Add(2,19556,1,0,0,7539,500);
-// C_Halloween_Hat
-	Add(2,19910,1,0,0,7539,500);
+	Add(2,12216,1,0,0,7539,2); // LV10 Agi Scroll
+	Add(2,12466,1,0,0,7539,2); // LV10 Blessing Scroll
+	Add(2,12211,1,0,0,7539,20); // Kafra Card
+	Add(2,12909,1,0,0,7539,200); // Kafra Card 10pc Box
+	Add(2,13697,1,0,0,7539,20); // Blessing Scroll Box (10)
+	Add(2,13698,1,0,0,7539,20); // Increase Agility Scroll Box (10)
+	Add(2,14233,1,0,0,7539,50); // Dead Branch box (10)
+	Add(2,12103,1,0,0,7539,300); // Bloody Branch
+	Add(2,7776,1,0,0,7539,70); // Gym Pass
+	Add(2,13710,1,0,0,7539,700); // Gym Pass Box
+	Add(2,12887,1,0,0,7539,700); // Infinite Fly Wing
+	Add(2,13995,1,0,0,7539,5); // Speed Potion Box (10)
+	Add(2,12209,1,0,0,7539,3); // Life Insurance
+	Add(2,14533,1,0,0,7539,50); // Field Manual 100%
+	Add(2,14535,1,0,0,7539,15); // Medium Life Potion
+	Add(2,13714,1,0,0,7539,150); // Medium Life Potion 10 Box
+	Add(2,14537,1,0,0,7539,15); // Regeneration Potion
+	Add(2,14113,1,0,0,7539,150); // Regeneration Potion Box (10)
+	Add(2,14601,1,0,0,7539,50); // Tyr's Blessing
+	Add(2,12210,1,0,0,7539,700); // Bubble Gum
 
 // Shop 3
-// Add new quests under the Quest items section
-// Fish in Mouth
-	Add(3,5403,1,0,0,7539,700,1054,350,995,50,996,50);
-// Baby Dragon Hat
-	Add(3,5531,1,0,0,7539,700,7447,250,7448,250,7445,250);
-// Alice Doll
-	Add(3,5137,1,0,0,7539,2000,7047,500,661,3,5141,1,4035,1);
-// Glaris Doll Hat
-	Add(3,5341,1,0,0,7539,2000,7047,500,661,3,5141,1,4058,1);
-// Defolty Doll Hat
-	Add(3,5340,1,0,0,7539,2000,7047,500,661,300,5141,1,4035,1);
-// Carmen Miranda Hat
-	Add(3,5307,1,0,0,7539,2000,587,250,576,250);
-// Dress Hat
-	Add(3,5211,1,0,0,7539,2000,5045,1,7063,500);
-// Rideword Hat
-	Add(3,5208,1,0,0,7539,2000,7015,200,1006,2);
-// Festival Pumpkin Hat
-	Add(3,5356,1,0,0,7539,1200,7225,1000,706,20);
-// Pirate Dagger
-	Add(3,5305,1,0,0,7539,1200,628,20,7189,120);
-// Purple Cowboy Hat
-	Add(3,5409,1,0,0,7539,1200,5019,1,7063,300);
-// Santa Poring Hat
-	Add(3,5381,1,0,0,7539,1200,2236,10,2254,1,7294,20);
-// Pisces Crown
-	Add(3,5515,1,0,0,7539,1200,2235,1,720,70);
-// Pisces Diadem
-	Add(3,5514,1,0,0,7539,1200,721,70,5002,1);
-// Necromancer's Hood
-	Add(3,5502,1,0,0,7539,1200,7442,10,923,50);
-// Koneko Hat
-	Add(3,5372,1,0,0,7539,1200,5058,1);
-// Triple Poring Hat
-	Add(3,5255,1,0,0,7539,1200,2254,1,2255,1,2274,1,7294,10);
-// MoonLight Flower Hat
-	Add(3,5214,1,0,0,7539,1200,1022,500,728,250);
-// Fish Head Hat
-	Add(3,5380,1,0,0,7539,700,579,800);
+	Add(3,19556,1,0,0,7539,500); // C_Kabuki_Mask
+	Add(3,19600,1,0,0,7539,500); // Costume Drooping_Kiehl
+	Add(3,19608,1,0,0,7539,500); // C_Chick_Hat
+	Add(3,19623,1,0,0,7539,500); // C_Bijofnil_Wings
+	Add(3,19660,1,0,0,7539,500); // C_Coppola
+	Add(3,19701,1,0,0,7539,500); // C_Red_Bonnet
+	Add(3,19747,1,0,0,7539,500); // Costume Tha_Despero Mask
+	Add(3,19808,1,0,0,7539,500); // C_Blazing_Sun
+	Add(3,19827,1,0,0,7539,500); // C_Amistr_Cap
+	Add(3,19831,1,0,0,7539,500); // C_Filir_Hat
+	Add(3,19834,1,0,0,7539,500); // C_Baseball_Cap
+	Add(3,19837,1,0,0,7539,500); // Costume Asara_Fairy_Hat
+	Add(3,19842,1,0,0,7539,500); // C_Puppy_Hat
+	Add(3,19860,1,0,0,7539,500); // Costume School_Criatura_Hat
+	Add(3,19878,1,0,0,7539,500); // C_Drooping_Bunny
+	Add(3,19910,1,0,0,7539,500); // C_Halloween_Hat
+	Add(3,19919,1,0,0,7539,500); // Costume Quve_Mask
+	Add(3,19959,1,0,0,7539,500); // C_Drooping_Argiope
+	Add(3,19969,1,0,0,7539,500); // C_Blazing_Soul
+	Add(3,19971,1,0,0,7539,500); // C_Dying_Swan
+	Add(3,20042,1,0,0,7539,500); // Costume Hermos_Cap
+	Add(3,20085,1,0,0,7539,500); // C_Clover_Silkhat
+	Add(3,20160,1,0,0,7539,500); // Costume Magnolia_Hat
+	Add(3,20175,1,0,0,7539,500); // C_Diabolic_Headphone
 
-//Quest shop 4 (50 points)
-	Add(4,31562,1,0,50); // Zealotus Doll
-	Add(4,20449,1,0,50); // Black and White Temptation
-	Add(4,19934,1,0,50); // Alive Ten Gallon Hat Of Flame
-	Add(4,20313,1,0,50); // Costume CD in Mouth
-	Add(4,19530,1,0,50); // Wild Rose Hat
-	Add(4,20177,1,0,50); // Drooping Dorasuke
-	Add(4,18740,1,0,50); // White Phoenix Hair
-	Add(4,19917,1,0,50); // Gloomy Pumpkin Hat
-	Add(4,19598,1,0,50); // Wondering Wolf Helm
-	Add(4,20183,1,0,50); // Floating Ghost
-	Add(4,19544,1,0,50); // Drooping Cat Crew
-	Add(4,19537,1,0,50); // Gryphon Hat
-	Add(4,19667,1,0,50); // Helm of Dragoon
-	Add(4,20227,1,0,50); // Husky Hat
-	Add(4,19599,1,0,50); // Imp Hat
-	Add(4,19712,1,0,50); // Little Angel Doll
-	Add(4,19543,1,0,50); // Oliver Wolf Hood
-	Add(4,19707,1,0,50); // Pecopeco Cap Costume
-	Add(4,20273,1,0,50); // Soft Sheep Hat
-	Add(4,19884,1,0,50); // Vanargand Helm
-	Add(4,19818,1,0,50); // Droop Morocc Minion
-	Add(4,19883,1,0,50); // Piamette Hood
-	Add(4,19816,1,0,50); // Pecopeco Cap Costume
-	Add(4,20194,1,0,50); // Lion Mask
-	Add(4,20268,1,0,50); // Sleep Eclipse Family
-	Add(4,20006,1,0,50); // Dark Knight Mask
-	Add(4,20045,1,0,50); // Samambaia
-	Add(4,20197,1,0,50); // Amistr Beret
 
-// Quest Shop 5 (70 puntos)
-	Add(5,19777,1,0,70); // Twinkling Star
-	Add(5,20249,1,0,70); // Red Strong Hair
-	Add(5,31624,1,0,70); // Moew Lover
-	Add(5,20458,1,0,70); // Wild Poring Rider
-	Add(5,31179,1,0,70); // Wolf Masquerade
-// Quest shop 6 (100 puntos)
-	Add(6,31062,1,0,100); // Costume: Eleanor Wig
-	Add(6,31405,1,0,100); // Costume: Golden Eleanor Wig
-	Add(6,20405,1,0,100); // Costume Eremes' Scarf
-	Add(6,31057,1,0,100); // Costume Eremes Scarf (Black)
-	Add(6,20481,1,0,100); // Burning Mask of Champions
-	Add(6,19294,1,0,100); // Cyber Cat Ear Headphones (Red)
-	Add(6,20329,1,0,100); // Very Cute Doll Hat
-	Add(6,20036,1,0,100); // Crown of the Sword Master
-	Add(6,19823,1,0,100); // Kitsune Mask Hood
-	Add(6,19743,1,0,100); // Anubis Helm
-// Quest shop 7 (120 puntos)
-	Add(7,31186,1,0,120); // Black Cat
-	Add(7,31452,1,0,120); // White Cat
-	Add(7,31299,1,0,120); // White Rabbit
-// Quest Shop 8 (150 puntos)
-	Add(8,20247,1,0,150); // Costume Black Hand of Destiny
-	Add(8,31437,1,0,150); // Costume Baby Penguin
-	Add(8,20349,1,0,150); // Costume Flying Galapago
-	Add(8,20404,1,0,150); // Blessing Of Angels
-// Quest shop 9 (200 puntos)
-	Add(9,20285,1,0,200); // Costume Fluttering Cherry Blossom
-	Add(9,31498,1,0,200); // Costume: Elephangel
-	Add(9,31395,1,0,200); // Book of Magic
-	Add(9,20154,1,0,200); // Falling Leaves
-//Quest shop 10 (300 puntos)
-	Add(10,18744,1,0,300); // Twilight
-//Quest shop 11 (500 puntos)
-	Add(11,20761,1,0,500); // Happiness Wings
-	Add(11,20765,1,0,500); // Archangel Wing
-	Add(11,20764,1,0,500); // Fallen Angel Wing
-	Add(11,20727,1,0,500); // Brilliant Golden Wings
+// Shop 4
+	Add(4,5137,1,0,0,7539,2000,7047,500,661,3,5141,1,4035,1); // Alice Doll
+	Add(4,5208,1,0,0,7539,2000,7015,200,1006,2); // Rideword Hat
+	Add(4,5211,1,0,0,7539,2000,5045,1,7063,500); // Dress Hat
+	Add(4,5214,1,0,0,7539,1200,1022,500,728,250); // MoonLight Flower Hat
+	Add(4,5255,1,0,0,7539,1200,2254,1,2255,1,2274,1,7294,10); // Triple Poring Hat
+	Add(4,5305,1,0,0,7539,1200,628,20,7189,120); // Pirate Dagger
+	Add(4,5307,1,0,0,7539,2000,587,250,576,250); // Carmen Miranda Hat
+	Add(4,5340,1,0,0,7539,2000,7047,500,661,300,5141,1,4035,1); // Defolty Doll Hat
+	Add(4,5341,1,0,0,7539,2000,7047,500,661,3,5141,1,4058,1); // Glaris Doll Hat
+	Add(4,5356,1,0,0,7539,1200,7225,1000,706,20); // Festival Pumpkin Hat
+	Add(4,5372,1,0,0,7539,1200,5058,1); // Koneko Hat
+	Add(4,5380,1,0,0,7539,700,579,800); // Fish Head Hat
+	Add(4,5381,1,0,0,7539,1200,2236,10,2254,1,7294,20); // Santa Poring Hat
+	Add(4,5403,1,0,0,7539,700,1054,350,995,50,996,50); // Fish in Mouth
+	Add(4,5409,1,0,0,7539,1200,5019,1,7063,300); // Purple Cowboy Hat
+	Add(4,5502,1,0,0,7539,1200,7442,10,923,50); // Necromancer's Hood
+	Add(4,5514,1,0,0,7539,1200,721,70,5002,1); // Pisces Diadem
+	Add(4,5515,1,0,0,7539,1200,2235,1,720,70); // Pisces Crown
+	Add(4,5531,1,0,0,7539,700,7447,250,7448,250,7445,250); // Baby Dragon Hat
+
+//Quest shop 5 (50 points)
+	Add(5,31562,1,0,50); // Zealotus Doll
+	Add(5,20449,1,0,50); // Black and White Temptation
+	Add(5,19934,1,0,50); // Alive Ten Gallon Hat Of Flame
+	Add(5,20313,1,0,50); // Costume CD in Mouth
+	Add(5,19530,1,0,50); // Wild Rose Hat
+	Add(5,20177,1,0,50); // Drooping Dorasuke
+	Add(5,18740,1,0,50); // White Phoenix Hair
+	Add(5,19917,1,0,50); // Gloomy Pumpkin Hat
+	Add(5,19598,1,0,50); // Wondering Wolf Helm
+	Add(5,20183,1,0,50); // Floating Ghost
+	Add(5,19544,1,0,50); // Drooping Cat Crew
+	Add(5,19537,1,0,50); // Gryphon Hat
+	Add(5,19667,1,0,50); // Helm of Dragoon
+	Add(5,20227,1,0,50); // Husky Hat
+	Add(5,19599,1,0,50); // Imp Hat
+	Add(5,19712,1,0,50); // Little Angel Doll
+	Add(5,19543,1,0,50); // Oliver Wolf Hood
+	Add(5,19707,1,0,50); // Pecopeco Cap Costume
+	Add(5,20273,1,0,50); // Soft Sheep Hat
+	Add(5,19884,1,0,50); // Vanargand Helm
+	Add(5,19818,1,0,50); // Droop Morocc Minion
+	Add(5,19883,1,0,50); // Piamette Hood
+	Add(5,19816,1,0,50); // Pecopeco Cap Costume
+	Add(5,20194,1,0,50); // Lion Mask
+	Add(5,20268,1,0,50); // Sleep Eclipse Family
+	Add(5,20006,1,0,50); // Dark Knight Mask
+	Add(5,20045,1,0,50); // Samambaia
+	Add(5,20197,1,0,50); // Amistr Beret
+
+// Quest Shop 6 (70 puntos)
+	Add(6,19777,1,0,70); // Twinkling Star
+	Add(6,20249,1,0,70); // Red Strong Hair
+	Add(6,31624,1,0,70); // Moew Lover
+	Add(6,20458,1,0,70); // Wild Poring Rider
+	Add(6,31179,1,0,70); // Wolf Masquerade
+// Quest shop 7 (100 puntos)
+	Add(7,31062,1,0,100); // Costume: Eleanor Wig
+	Add(7,31405,1,0,100); // Costume: Golden Eleanor Wig
+	Add(7,20405,1,0,100); // Costume Eremes' Scarf
+	Add(7,31057,1,0,100); // Costume Eremes Scarf (Black)
+	Add(7,20481,1,0,100); // Burning Mask of Champions
+	Add(7,19294,1,0,100); // Cyber Cat Ear Headphones (Red)
+	Add(7,20329,1,0,100); // Very Cute Doll Hat
+	Add(7,20036,1,0,100); // Crown of the Sword Master
+	Add(7,19823,1,0,100); // Kitsune Mask Hood
+	Add(7,19743,1,0,100); // Anubis Helm
+// Quest shop 8 (120 puntos)
+	Add(8,31186,1,0,120); // Black Cat
+	Add(8,31452,1,0,120); // White Cat
+	Add(8,31299,1,0,120); // White Rabbit
+// Quest Shop 9 (150 puntos)
+	Add(9,20247,1,0,150); // Costume Black Hand of Destiny
+	Add(9,31437,1,0,150); // Costume Baby Penguin
+	Add(9,20349,1,0,150); // Costume Flying Galapago
+	Add(9,20404,1,0,150); // Blessing Of Angels
+// Quest shop 10 (200 puntos)
+	Add(10,20285,1,0,200); // Costume Fluttering Cherry Blossom
+	Add(10,31498,1,0,200); // Costume: Elephangel
+	Add(10,31395,1,0,200); // Book of Magic
+	Add(10,20154,1,0,200); // Falling Leaves
+//Quest shop 11 (300 puntos)
+	Add(11,18744,1,0,300); // Twilight
+//Quest shop 12 (500 puntos)
+	Add(12,20761,1,0,500); // Happiness Wings
+	Add(12,20765,1,0,500); // Archangel Wing
+	Add(12,20764,1,0,500); // Fallen Angel Wing
+	Add(12,20727,1,0,500); // Brilliant Golden Wings
 
 
 // -----------------------------------------------------------
@@ -428,3 +404,4 @@ function	script	qshop	{
 -	shop	qshop9	-1,909:-1
 -	shop	qshop10	-1,909:-1
 -	shop	qshop11	-1,909:-1
+-	shop	qshop12	-1,909:-1
