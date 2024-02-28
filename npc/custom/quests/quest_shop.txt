@@ -100,7 +100,7 @@ OnInit:
 	Add(1,20396,1,0,0,23550,50); // Item ID 20396, requiere 50 del item 23550
 	Add(1,31178,1,0,0,23550,50); // Item ID 31178, requiere 50 del item 23550
 	Add(1,31249,1,0,0,23550,50); // Item ID 31249, requiere 50 del item 23550
-	Add(1,31509,1,0,0,23550,50); // Item ID 31509, requiere 50 del item 23550
+	//Add(1,31509,1,0,0,23550,50); // Item ID 31509, requiere 50 del item 23550 -- eliminado, falta sprite
 	Add(1,31407,1,0,0,23550,50); // Item ID 31407, requiere 50 del item 23550
 	Add(1,19586,1,0,0,23550,50); // Item ID 19586, requiere 50 del item 23550
 
@@ -210,7 +210,7 @@ OnInit:
 
 // Quest Shop 6 (70 puntos)
 	Add(6,19777,1,0,70); // Twinkling Star
-	Add(6,20249,1,0,70); // Red Strong Hair
+	//Add(6,20249,1,0,70); // Red Strong Hair -- falta sprite
 	Add(6,31624,1,0,70); // Moew Lover
 	Add(6,20458,1,0,70); // Wild Poring Rider
 	Add(6,31179,1,0,70); // Wolf Masquerade
@@ -236,7 +236,7 @@ OnInit:
 	Add(9,20404,1,0,150); // Blessing Of Angels
 // Quest shop 10 (200 puntos)
 	Add(10,20285,1,0,200); // Costume Fluttering Cherry Blossom
-	Add(10,31498,1,0,200); // Costume: Elephangel
+	//Add(10,31498,1,0,200); // Costume: Elephangel -- falta sprite
 	Add(10,31395,1,0,200); // Book of Magic
 	Add(10,20154,1,0,200); // Falling Leaves
 //Quest shop 11 (300 puntos)
