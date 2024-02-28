@@ -179,7 +179,7 @@ OnInit:
 	Add(4,5531,1,0,0,7539,700,7447,250,7448,250,7445,250); // Baby Dragon Hat
 
 //Quest shop 5 (50 points)
-	//Add(5,31562,1,0,50); // Zealotus Doll falta sprite
+	Add(5,31562,1,0,50); // Zealotus Doll falta sprite
 	Add(5,20449,1,0,50); // Black and White Temptation
 	Add(5,19934,1,0,50); // Alive Ten Gallon Hat Of Flame
 	Add(5,20313,1,0,50); // Costume CD in Mouth
